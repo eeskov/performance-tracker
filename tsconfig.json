@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "module" : "commonjs",
+      "target": "ES6",
+      "declaration":true,
+      "strict": true,
+      "moduleResolution": "nodenext",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "outDir": "dist",
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "typeRoots": ["./node_modules/@types", "./types"],
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.test.ts"]
+  }
