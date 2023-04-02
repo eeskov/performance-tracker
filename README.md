@@ -13,13 +13,13 @@ This package provides a simple and efficient way to track and measure the perfor
 ## Installation
 
 ```
-npm install @zheni/performance-tracker
+npm install @eeskov/performance-tracker
 ```
 
 or
 
 ```
-yarn add @zheni/performance-tracker
+yarn add @eeskov/performance-tracker
 ```
 
 ## Usage
