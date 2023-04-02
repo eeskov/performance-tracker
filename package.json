@@ -7,6 +7,7 @@
     "tracker",
     "performance tracker"
   ],
+  "repository": "https://github.com/eeskov/performance-tracker",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
