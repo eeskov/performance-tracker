@@ -1,5 +1,5 @@
 {
-  "name": "@zheni/performance-tracker",
+  "name": "@eeskov/performance-tracker",
   "version": "0.0.1",
   "description": "JS performance tracker",
   "keywords": [
