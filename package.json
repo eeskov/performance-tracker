@@ -21,10 +21,8 @@
   },
   "author": "eeskov",
   "license": "MIT",
-  "dependencies": {
-    "typescript": "^5.0.3"
-  },
   "devDependencies": {
+    "typescript": "^5.0.3",
     "@types/jest": "^29.5.0",
     "jest": "^29.5.0",
     "ts-jest": "^29.0.5",
