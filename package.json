@@ -1,6 +1,6 @@
 {
   "name": "@eeskov/performance-tracker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JS performance tracker",
   "keywords": [
     "performance",
