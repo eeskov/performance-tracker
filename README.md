@@ -25,21 +25,41 @@ yarn add @eeskov/performance-tracker
 ## Usage
 
 ```ts
-import {PerformanceTracker} from 'performance-tracker';
+import {PerformanceTracker} from 'eeskov/performance-tracker';
 
 const tracker = PerformanceTracker.getInstance();
 
-tracker.track('start');
-// Some code here
-tracker.track('middle');
-// Some more code here
-tracker.track('end');
+tracker.track('START');
+for (let i = 0; i < 5; i++) {
+  tracker.track('START_LOOP');
+  if (i === 3) {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+  }
+  tracker.track('END_LOOP');
+}
+tracker.track('END');
 
 console.log(tracker.getDiffAll()); // Logs the time differences between all tracked markers
 
-console.log(tracker.getDiff('start', 'middle')); // Logs the time difference between 'start' and 'middle' markers
+console.log(tracker.getDiff('START', 'END')); // Logs the time difference between 'start' and 'middle' markers
+/*
+{
+  message: 'START -> END 1016.58 ms',
+  label1: 'START',
+  label2: 'END',
+  diff: '1016.58'
+}
+*/
 
-console.log(tracker.getDiff('middle', 'end')); // Logs the time difference between 'middle' and 'end' markers
+console.log(
+  tracker.getDiffBetween(
+    {
+      label: 'START_LOOP',
+      trackType: 'first',
+    },
+    'END_LOOP',
+  ),
+); // Logs all the time differences between START_LOOP and END_LOPP tracked markers
 ```
 
 ## API
