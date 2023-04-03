@@ -25,7 +25,7 @@ yarn add @eeskov/performance-tracker
 ## Usage
 
 ```ts
-import {PerformanceTracker} from 'eeskov/performance-tracker';
+import {PerformanceTracker} from '@eeskov/performance-tracker';
 
 const tracker = PerformanceTracker.getInstance();
 
