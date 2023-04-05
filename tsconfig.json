@@ -9,7 +9,6 @@
       "removeComments": true,
       "preserveConstEnums": true,
       "outDir": "dist",
-      "sourceMap": true,
       "esModuleInterop": true,
       "typeRoots": ["./node_modules/@types", "./types"],
     },
